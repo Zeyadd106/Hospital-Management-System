@@ -1,0 +1,34 @@
+@echo off
+echo Medicare Project Cleanup Script
+echo ==============================
+
+echo Deleting Controllers...
+if exist "c:\Users\3LAMYA\Medicare\app\Http\Controllers\AppointmentController.php" del "c:\Users\3LAMYA\Medicare\app\Http\Controllers\AppointmentController.php"
+if exist "c:\Users\3LAMYA\Medicare\app\Http\Controllers\BlogController.php" del "c:\Users\3LAMYA\Medicare\app\Http\Controllers\BlogController.php"
+if exist "c:\Users\3LAMYA\Medicare\app\Http\Controllers\ContactController.php" del "c:\Users\3LAMYA\Medicare\app\Http\Controllers\ContactController.php"
+if exist "c:\Users\3LAMYA\Medicare\app\Http\Controllers\DepartmentController.php" del "c:\Users\3LAMYA\Medicare\app\Http\Controllers\DepartmentController.php"
+if exist "c:\Users\3LAMYA\Medicare\app\Http\Controllers\DoctorController.php" del "c:\Users\3LAMYA\Medicare\app\Http\Controllers\DoctorController.php"
+if exist "c:\Users\3LAMYA\Medicare\app\Http\Controllers\HomeController.php" del "c:\Users\3LAMYA\Medicare\app\Http\Controllers\HomeController.php"
+if exist "c:\Users\3LAMYA\Medicare\app\Http\Controllers\ProfileController.php" del "c:\Users\3LAMYA\Medicare\app\Http\Controllers\ProfileController.php"
+if exist "c:\Users\3LAMYA\Medicare\app\Http\Controllers\ServiceController.php" del "c:\Users\3LAMYA\Medicare\app\Http\Controllers\ServiceController.php"
+
+echo Deleting Views...
+if exist "c:\Users\3LAMYA\Medicare\resources\views\appointments.blade.php" del "c:\Users\3LAMYA\Medicare\resources\views\appointments.blade.php"
+if exist "c:\Users\3LAMYA\Medicare\resources\views\home.blade.php" del "c:\Users\3LAMYA\Medicare\resources\views\home.blade.php"
+if exist "c:\Users\3LAMYA\Medicare\resources\views\profile.blade.php" del "c:\Users\3LAMYA\Medicare\resources\views\profile.blade.php"
+if exist "c:\Users\3LAMYA\Medicare\resources\views\services.blade.php" del "c:\Users\3LAMYA\Medicare\resources\views\services.blade.php"
+if exist "c:\Users\3LAMYA\Medicare\resources\views\welcome.blade.php" del "c:\Users\3LAMYA\Medicare\resources\views\welcome.blade.php"
+
+echo Removing Appointments View Directory...
+if exist "c:\Users\3LAMYA\Medicare\resources\views\appointments" rmdir /s /q "c:\Users\3LAMYA\Medicare\resources\views\appointments"
+
+echo Deleting Models...
+if exist "c:\Users\3LAMYA\Medicare\app\Models\PatientMedicalHistory.php" del "c:\Users\3LAMYA\Medicare\app\Models\PatientMedicalHistory.php"
+
+echo Deleting Migrations...
+if exist "c:\Users\3LAMYA\Medicare\database\migrations\2014_10_12_100000_create_password_resets_table.php" del "c:\Users\3LAMYA\Medicare\database\migrations\2014_10_12_100000_create_password_resets_table.php"
+if exist "c:\Users\3LAMYA\Medicare\database\migrations\2019_08_19_000000_create_failed_jobs_table.php" del "c:\Users\3LAMYA\Medicare\database\migrations\2019_08_19_000000_create_failed_jobs_table.php"
+if exist "c:\Users\3LAMYA\Medicare\database\migrations\2019_12_14_000001_create_personal_access_tokens_table.php" del "c:\Users\3LAMYA\Medicare\database\migrations\2019_12_14_000001_create_personal_access_tokens_table.php"
+
+echo Cleanup complete!
+pause

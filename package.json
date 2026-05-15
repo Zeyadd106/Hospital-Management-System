@@ -1,0 +1,38 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "build:css": "vite build --ssr resources/css"
+    },
+    "devDependencies": {
+        "@babel/preset-env": "^7.26.9",
+        "@babel/preset-react": "^7.26.3",
+        "@popperjs/core": "^2.11.8",
+        "@vitejs/plugin-vue": "^4.5.2",
+        "axios": "^1.1.2",
+        "bootstrap": "^5.3.3",
+        "laravel-vite-plugin": "^0.7.2",
+        "lodash": "^4.17.19",
+        "postcss": "^8.1.14",
+        "sass": "^1.85.1",
+        "vite": "^4.0.0"
+    },
+    "name": "medicare",
+    "version": "1.0.0",
+    "description": "Laravel Medicare Project",
+    "main": "vite.config.js",
+    "directories": {
+        "test": "tests"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^6.7.2",
+        "@pusher/push-notifications-web": "^1.1.0",
+        "font-awesome": "^4.7.0",
+        "vue": "^3.3.4"
+    }
+}

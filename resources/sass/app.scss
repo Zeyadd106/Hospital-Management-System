@@ -1,0 +1,225 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+// Variables
+:root {
+    --primary-color: #1d3557;
+    --secondary-color: #457b9d;
+    --accent-color: #a8dadc;
+    --background-light: #f1faee;
+    --text-color: #1d3557;
+}
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+// Custom Styles
+body {
+    font-family: 'Nunito', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-light);
+    color: var(--text-color);
+}
+
+// Navbar Styles
+nav.navbar {
+    padding: 15px;
+    background-color: var(--primary-color) !important;
+
+    .icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .navbar-brand {
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 18px;
+        color: white;
+
+        &:hover {
+            color: var(--accent-color);
+        }
+    }
+}
+
+// Profile Dropdown
+.profile-dropdown {
+    position: relative;
+    display: inline-block;
+
+    .profile-icon {
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 8px;
+        border-radius: 50%;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 0;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        z-index: 1;
+
+        a {
+            color: var(--primary-color);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 16px;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: var(--background-light);
+            }
+        }
+    }
+
+    &:hover .dropdown-content {
+        display: block;
+    }
+}
+
+// Vaccination Section
+.vaccination-section {
+    padding: 4rem 0;
+
+    .vaccination-card {
+        text-align: center;
+        padding: 15px;
+        transition: all 0.3s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .vaccination-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .vaccination-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .vaccination-description {
+            font-size: 1rem;
+            color: var(--text-color);
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+// Health Screenings Section
+.health-section {
+    padding: 4rem 0;
+
+    .card {
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    .card-title {
+        color: var(--primary-color);
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    .card-icon {
+        font-size: 3rem;
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+    }
+
+    .btn-primary {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+        padding: 10px 20px;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+    }
+}
+
+// Button Styles
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: var(--secondary-color);
+        border-color: var(--secondary-color);
+    }
+}
+
+// Image Styles
+.vaccination-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+// Responsive Adjustments
+@media (max-width: 768px) {
+    .vaccination-card {
+        margin-bottom: 1rem;
+    }
+}
+
+// Form Styles
+.form-control {
+    border-color: var(--secondary-color);
+    
+    &:focus {
+        border-color: var(--primary-color);
+        box-shadow: 0 0 0 0.2rem rgba(29, 53, 87, 0.25);
+    }
+}
+
+// Card Styles
+.card {
+    border-color: var(--secondary-color);
+    border-radius: 10px;
+
+    .card-header {
+        background-color: var(--primary-color);
+        color: white;
+        font-weight: bold;
+    }
+}

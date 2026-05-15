@@ -1,0 +1,132 @@
+/* Root variables */
+:root {
+  --primary-color: #1d3557;
+  --secondary-color: #457b9d;
+  --accent-color: #a8dadc;
+  --background-light: #f1faee;
+  --text-color: #1d3557;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-light);
+}
+
+/* Navbar styles */
+nav.navbar {
+  padding: 15px;
+  background-color: var(--primary-color) !important;
+}
+
+.navbar .icon {
+  width: 40px;
+  height: 40px;
+}
+
+nav.navbar .navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+nav.navbar .navbar-nav .nav-link {
+  font-size: 18px;
+  color: white;
+}
+
+nav.navbar .navbar-nav .nav-link:hover {
+  color: var(--accent-color);
+}
+
+.profile-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-icon {
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.profile-icon:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: var(--primary-color);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--background-light);
+}
+
+.profile-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+/* Card styles */
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.card-header {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Form styles */
+.form-control:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 0.25rem rgba(168, 218, 220, 0.25);
+}
+
+/* Footer styles */
+footer {
+  background-color: var(--primary-color) !important;
+  color: white;
+  padding: 20px 0;
+}
+
+footer a {
+  color: var(--accent-color);
+}
+
+footer a:hover {
+  color: white;
+}
+

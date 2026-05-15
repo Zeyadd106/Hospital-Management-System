@@ -1,0 +1,87 @@
+/* General Styles */
+.main-content {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Doctor Index Page Styles */
+.doctors-section {
+    padding: 4rem 0;
+}
+
+.doctor-card {
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.doctor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.doctor-image {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.doctor-specialty {
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.doctor-department {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.doctor-contact {
+    font-size: 0.9rem;
+}
+
+.filter-section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+/* Doctor Profile Page Styles */
+.doctor-profile-section {
+    padding: 4rem 0;
+}
+
+.doctor-info {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info i {
+    width: 25px;
+    color: var(--primary-color);
+}
+
+.schedule-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.day-schedule {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.day-schedule:last-child {
+    border-bottom: none;
+}
